@@ -10,23 +10,59 @@
     <header class="header">
       <h1>Quiz App</h1>
     </header>
-    <main>
+    <main class="main" data-js="main">
       <div class="question_card">
-        <svg
-          class="question-bookmark"
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-bookmark"
-          viewBox="0 0 16 16"
+        <button
+          class="question_card_bookmark"
+          aria-label="bookmark"
+          type="button"
+          data-js="bookmark-button-toggle"
         >
-          <path
-            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
-          />
-        </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-bookmark"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+            />
+          </svg>
+        </button>
 
-        <h3 class="question">What does the Giraffe says?</h3>
+        <h3 class="question">What does the fux says?</h3>
+        <h2>
+          <button class="answer">Show answer</button>
+        </h2>
+        <ul class="tag">
+          <li>#html</li>
+          <li>#flexbox</li>
+          <li>#css</li>
+        </ul>
+      </div>
+      <div class="question_card">
+        <button
+          class="question_card_bookmark-active"
+          aria-label="bookmark"
+          type="button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-bookmark"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+            />
+          </svg>
+        </button>
+
+        <h3 class="question">What does the dog says?</h3>
         <h2><button class="answer">Show answer</button></h2>
         <ul class="tag">
           <li>#html</li>
@@ -36,14 +72,14 @@
       </div>
       <footer>
         <div class="footer-navigation">
-          <a href="index.html">
+          <a class="house_icon">
             <svg
-              class="footer-navigation_icon_bm_in"
+              class="footer-navigation_icon_in_in"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
               fill="currentColor"
-              class="bi_bi-house"
+              class="bi bi-house"
               viewBox="0 0 16 16"
             >
               <path
@@ -56,14 +92,14 @@
               />
             </svg>
           </a>
-          <a href="bookmark.html">
+          <a href="http://127.0.0.1:3000/bookmark.html">
             <svg
-              class="footer-navigation_icon_bm_bm"
+              class="footer-navigation_icon_in_bm"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
               fill="currentColor"
-              class="bi_bi-bookmark"
+              class="bi bi-bookmark"
               viewBox="0 0 16 16"
             >
               <path
@@ -73,12 +109,12 @@
           </a>
           <a>
             <svg
-              class="footer-navigation_icon_bm_pr"
+              class="footer-navigation_icon_in_pr"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
               fill="currentColor"
-              class="bi_bi-person-square"
+              class="bi bi-person-square"
               viewBox="0 0 16 16"
             >
               <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
