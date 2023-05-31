@@ -1,0 +1,19 @@
+{
+  "name": "quiz-app_gabor",
+  "version": "1.0.0",
+  "description": "In this project you will build the layout of your first mobile web application, a quiz app. In later projects we will expand this app and add all sorts of cool functionality. In this app you will be able to:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaborrubus/Quizz-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaborrubus/Quizz-app/issues"
+  },
+  "homepage": "https://github.com/gaborrubus/Quizz-app#readme"
+}

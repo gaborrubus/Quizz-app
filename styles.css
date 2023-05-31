@@ -26,11 +26,18 @@ main {
   padding: 0.5rem;
   font-size: clamp(3vw, 5vw, 20px);
 }
-.question-bookmark {
+.question_card_bookmark {
   position: absolute;
   right: 0.2rem;
   top: -0.5rem;
   background-color: white;
+  font-size: clamp(3vw, 5vw, 20px);
+}
+.question_card_bookmark_active {
+  position: absolute;
+  right: 0.2rem;
+  top: -0.5rem;
+  background-color: black;
   font-size: clamp(3vw, 5vw, 20px);
 }
 .answer {
@@ -42,6 +49,26 @@ main {
   padding: 0.5rem;
   font-size: clamp(3vw, 5vw, 20px);
 }
+.answer_hidden {
+  display: none;
+  background-color: azure;
+  border: none;
+  border-radius: 0.2rem;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  margin: 2rem;
+  padding: 0.5rem;
+  font-size: clamp(3vw, 5vw, 20px);
+}
+.answer_hidden_active {
+  display: block;
+}
+.show_answer {
+  display: none;
+}
+.show_answer_active {
+  display: block;
+}
+
 .tag {
   position: absolute;
   list-style: none;
